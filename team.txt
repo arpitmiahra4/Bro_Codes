@@ -1,0 +1,24 @@
+           **************************+ Team_Name --->"BRO_CODES"<---+******************************
+
+
+           """"""""""""""""""""""""""""""""""""""""+ Member +""""""""""""""""""""""""""""""""""""""
+
+            s.no-->Student_Code--------------------->Names------------------------->Title.!     
+
+
+             1.)    fw19_0501	                "Arpit Mishra"                Student:1  (Task:2)            
+
+             2.)    fw19_0859	           "Shubham Dattatray Adhane"         Student:2  (Task:1)
+
+             3.)    fw19_0819	             "Sahil Vishwakarma"              Student:3  (Task:1)
+
+             4.)    fw19_0279	               "Manish Sonawane"              Student:4  (Task:1)
+
+             5.)    fw19_1092	                    "Ravi"                    Student:5  (Task:1) 
+
+
+         ........Project :-> {"Team Collaboration"}....Submitted_To :-> {"Chandra_Sekhar_Sir"}......
+
+
+
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<The_End>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
