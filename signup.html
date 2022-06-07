@@ -13,47 +13,37 @@
             margin: auto;
             background-color: #48c9b0 ;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: grid;
+            justify-content: center;
         }
         div>p{
             text-align: center;
             font-size: 28px;
             color: white;
         }
-        div>div{
-            width: 80%;
+        .fname{
+            width: 285px;
             height: 50px;
-            border: 1px solid transparent;
-            margin: auto;
-            margin-bottom: 15px;
+            font-size: 15px;
+            padding-left: 10px;
         }
-        .white{
-            background-color: white;
-            color: grey;
-            width: 75%;
-            padding-left: 18px;
-            border: 1px solid black;
-            font-size: 17px;
-            display: flex;
-            align-items: center;
-        }
-        .blue{
+        .bottom{
+            width: 300px;
+            height: 50px;
             background-color: #17a589;
             color: white;
-            font-size: 16px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
         }
     </style>
 </head>
 <body>
     <div id="box">
         <p>- Visitors -</p>
-        <div class="white">Full name</div>
-        <div class="white">Email</div>
-        <div class="white">Organization</div>
-        <div class="blue">SIGN UP</div>
-        <div class="blue">RETURN</div>
+        <input class="fname" type="text" placeholder="Full name">
+        <input class="fname" type="text" placeholder="Email">
+        <input class="fname" type="text" placeholder="Organization">
+        <button class="bottom">SIGN UP</button>
+        <button class="bottom">RETURN</button>
+        
     </div>
 </body>
 </html>
