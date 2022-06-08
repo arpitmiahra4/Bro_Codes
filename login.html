@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGINPAGE</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    
+    <style>
+        body{
+            background-color:#6a64bf;
+        }
+        #form{
+            width: 38%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            row-gap: 45px;
+            margin-top: 3%;
+            border-radius: 18px;
+            background-color: white;
+            padding-top: 5%;
+            padding-bottom: 3%;height: max-content;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 0px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 38px;
+
+        }
+        input{
+            width: 70%;
+            margin: auto;
+            padding: 10px;
+            border: 0px;
+            cursor: text;
+            font-family:'Poppins',sans-serif;
+            font-size: 20px;
+            border-bottom: 2px solid rgb(172,172,174);
+        }
+        #form>input:nth-child(4){
+            width: 75%;
+            cursor: pointer;
+            font-weight: bolder;
+            background-color: rgb(146,45,250);
+            color: white;
+        }
+        #form>div{
+            font-family: 'Poppins',sans-serif;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 515;
+            color: rgb(143,123,116);
+        }
+        #form>div>h5+h5{
+            margin-top: -20px;
+        }
+        #form a{
+            margin-left: 3%;
+            color: rgb(46,110,161);
+            text-decoration: solid;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        @media all and (min-width:480px) and (max-width:1000px){
+            #form{
+                width: 80%;
+            }
+        }
+        @media all and (min-width:150px) and (max-width:479px){
+            #form{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h1>Login</h1>
+        <input id="email" type="email" placeholder="EMAIL-ID">
+        <input id="password" type="password" placeholder="PASSWORD">
+        <input type="submit" value="Login">
+        <div>
+            <h5>FORGET<span><a href="">PASSWORD</a></span>?</h5>
+            <h5>DON'T HAVE AN ACCOUNT ?<span><a href=" ">SIGN UP</a></span></h5>
+        </div>
+    </form>
+</body>
+</html>
+<script>
+    let signupData = JSON.parse(localStorage.getItem("signupData"));
+    signupData.forEach(function(el){
+        document.querySelector("form").addEventListener("submit",function(){
+            event.preventDefault();
+            let mail=form.mail.value;
+            let password=form.password.value;
+            if(mail==el.email&&password==el.password){
+                alert("Login Successful");
+                localStorage.setItem("loginSuccessful",JSON.stringify(true));
+                window.location.href="index.html";
+            }
+            else{
+                alert("Enter Valid email and password");
+                localStorage.setItem("loginSuccessful",JSON.stringify(false));
+            }
+        });
+    });
+</script>
